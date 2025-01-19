@@ -240,5 +240,9 @@ SceneManager.LoadScene("PUzzle");
         if(_IsStartGame&&!_IsGameOver){
         puzzleAnsCheck();
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+           Application.Quit();
+        }
     }
 }
