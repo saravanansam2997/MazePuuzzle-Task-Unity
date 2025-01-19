@@ -55,6 +55,8 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           targetPlatform: WebGL
+           # adding allowDirtyBuild here fixed it for me!
+          allowDirtyBuild: true
 
       # Output
       - uses: actions/upload-artifact@v3
